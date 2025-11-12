@@ -1,0 +1,26 @@
+.navbar {
+	background-color: #FF0000 !important;
+}
+
+.nav-link, .navbar-brand {
+		color: #fff;
+}
+
+.nav-link:hover {
+	color:#000;
+}
+
+.active {
+	color: gold;
+	
+}
+
+<style>
+  .resize-image {
+    width: 400px;  /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Optional: Ensures images cover the area without distortion/stretching by cropping if needed */
+  }
+</style>
+
+}
