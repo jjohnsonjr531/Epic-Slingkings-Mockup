@@ -15,12 +15,10 @@
 	
 }
 
-<style>
   .resize-image {
     width: 400px;  /* Set a fixed width */
     height: 300px; /* Set a fixed height */
-    object-fit: cover; /* Optional: Ensures images cover the area without distortion/stretching by cropping if needed */
+    object-fit: cover;
   }
-</style>
-
+td{ padding: 20px;
 }
