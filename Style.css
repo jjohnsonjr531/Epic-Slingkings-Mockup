@@ -1,24 +1,51 @@
+/* Navbar */
 .navbar {
-	background-color: #FF0000 !important;
+  background-color: #FF0000 !important;
 }
-
-.nav-link, .navbar-brand {
-		color: #fff;
+.navbar-brand, .nav-link {
+  color: #fff !important;
 }
-
 .nav-link:hover {
-	color:#000;
+  color: #000 !important;
+}
+.navbar .active {
+  color: gold !important;
 }
 
-.active {
-	color: gold;
-	
+/* Center the page header/title */
+.site-title {
+  text-align: center;
+  margin: 1.25rem 0;
+  font-weight: 700;
+  color: #222;
 }
 
-  .resize-image {
-    width: 400px;  /* Set a fixed width */
-    height: 300px; /* Set a fixed height */
-    object-fit: cover;
+/* Make interior/content links red (but leave navbar links white) */
+.content a, a:not(.nav-link) {
+  color: #c00;
+  text-decoration: underline;
+}
+.content a:hover, a:not(.nav-link):hover {
+  color: #a00;
+}
+
+/* Responsive images: scale to container, keep aspect, crop if needed on large screens */
+.resize-image, .vehicle-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Keep a consistent visual height on wide screens while remaining responsive */
+@media (min-width: 768px) {
+  .vehicle-image {
+    max-height: 300px;
+    width: 100%;
   }
-td{ padding: 20px;
+}
+
+/* Table cell spacing (kept from original) */
+td {
+  padding: 20px;
 }
