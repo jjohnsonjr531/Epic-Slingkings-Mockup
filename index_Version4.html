@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Epic Slingkings Mockup</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <style>
+    /* Optional: smooth scrolling for in-page links */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#fleet" style="position:absolute;left:-999px;">Skip to content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg" role="navigation" style="z-index:1000;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#top">Epic Slingkings Mockup</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links now point to in-page section IDs -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fleet">Fleet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="site-title">Epic Slingkings Mockup</h1>
+  </header>
+
+  <section id="featured" class="container my-4">
+    <h2 class="text-center">Featured Vehicles</h2>
+    <div class="ratio ratio-16x9 my-3">
+      <iframe src="https://www.youtube.com/embed/_28yBWAYiYg" title="Featured video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="about" class="container my-4">
+    <h2 class="text-center">About Epic Slingkings</h2>
+    <p class="lead text-center">We provide unique vehicle rentals including three-wheeled autocycles and luxury SUVs for memorable drives and events.</p>
+  </section>
+
+  <section id="fleet" class="container vehicles">
+    <article class="vehicle row g-3 align-items-center mb-4">
+      <figure class="col-md-4">
+        <img src="Car.png" alt="Polaris Slingshot" class="resize-image vehicle-image img-fluid">
+        <figcaption>Polaris Slingshot</figcaption>
+      </figure>
+      <div class="col-md-8 content">
+        <h3>Polaris Slingshot</h3>
+        <p>A three-wheeled, open-air autocycle with unique two side-by-side seats and combines aspects of motorcycle and cars.</p>
+        <p><strong>Rental Rate:</strong> $175/day — <strong>Charter Rate:</strong> $200/hr</p>
+        <p><a href="#book">Book Polaris Slingshot</a></p>
+      </div>
+    </article>
+
+    <article class="vehicle row g-3 align-items-center mb-4">
+      <figure class="col-md-4">
+        <img src="SS.jpg" alt="Cadillac Escalade" class="resize-image vehicle-image img-fluid">
+        <figcaption>Cadillac Escalade</figcaption>
+      </figure>
+      <div class="col-md-8 content">
+        <h3>Cadillac Escalade</h3>
+        <p>A full-size luxury SUV known for its bold styling, powerful performance, and high-end technology and features.</p>
+        <p><strong>Rental Rate:</strong> $350/day — <strong>Charter Rate:</strong> $400/hr</p>
+        <p><a href="#book">Book Cadillac Escalade</a></p>
+      </div>
+    </article>
+
+    <article class="vehicle row g-3 align-items-center mb-4">
+      <figure class="col-md-4">
+        <img src="TSL.jpg" alt="Tesla Model 3" class="resize-image vehicle-image img-fluid">
+        <figcaption>Tesla Model 3</figcaption>
+      </figure>
+      <div class="col-md-8 content">
+        <h3>Tesla Model 3</h3>
+        <p>Fully electric, mid-size sedan known for its minimalist interior with a large 15-inch central touchscreen.</p>
+        <p><strong>Rental Rate:</strong> $200/day — <strong>Charter Rate:</strong> $375/hr</p>
+        <p><a href="#book">Book Tesla Model 3</a></p>
+      </div>
+    </article>
+  </section>
+
+  <section id="book" class="container my-4">
+    <h2 class="text-center">Book a vehicle</h2>
+    <p class="text-center">To book, select a vehicle and contact us at <a href="mailto:info@example.com">info@example.com</a> or use the contact form below.</p>
+  </section>
+
+  <section id="contact" class="container my-4">
+    <h2 class="text-center">Stay in touch</h2>
+    <p class="text-center">Enter your email to receive updates and special offers.</p>
+
+    <form id="subscribe-form" class="row g-2 justify-content-center" novalidate>
+      <div class="col-auto">
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input type="email" class="form-control" id="newsletter-email" name="email" placeholder="you@example.com" required aria-describedby="emailHelp">
+      </div>
+      <div class="col-auto">
+        <button id="subscribe-btn" class="btn btn-primary" type="submit">Subscribe</button>
+      </div>
+      <div class="col-12">
+        <div id="subscribe-message" class="mt-2" role="status" aria-live="polite"></div>
+      </div>
+    </form>
+  </section>
+
+  <footer class="bg-light py-3 mt-4">
+    <div class="container text-center">
+      <p>Copyright © 2025 Epic Slingkings Mockup. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById('subscribe-form');
+      const emailInput = document.getElementById('newsletter-email');
+      const msg = document.getElementById('subscribe-message');
+      const btn = document.getElementById('subscribe-btn');
+
+      function showMessage(text, isError) {
+        msg.textContent = text;
+        msg.style.color = isError ? '#a00' : '#060';
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!emailInput.checkValidity()) {
+          emailInput.reportValidity();
+          showMessage('Please enter a valid email address.', true);
+          emailInput.focus();
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Subscribing...';
+        const email = emailInput.value.trim();
+
+        setTimeout(function () {
+          try {
+            localStorage.setItem('subscribedEmail', email);
+            showMessage('Thanks! Your email has been saved. You will receive updates soon.', false);
+            emailInput.value = '';
+            emailInput.setAttribute('aria-invalid', 'false');
+          } catch (err) {
+            showMessage('Sorry, there was an error saving your email. Please try again.', true);
+            console.error(err);
+          }
+
+          btn.disabled = false;
+          btn.textContent = 'Subscribe';
+        }, 800);
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const saved = localStorage.getItem('subscribedEmail');
+        if (saved) {
+          showMessage('You are subscribed with ' + saved + '.', false);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
